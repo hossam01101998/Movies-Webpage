@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Movies</title>
+  </head>
+  <body>
+    
+    <header class="header">
+      <div>
+      <form id="form">
+        <input type="text" id="search" class="search" placeholder="search">
+      </form>
+    </div>
+    <div>
+      Background color
+      <input type="color" id="color1" name ="favcolor" value="#ff0000">
+      <input onclick = "color1()" type="submit">
+
+    </div>
+    <div>
+      Border color
+      <input type="color" id="color2" name ="favcolor" value="#ff0000">
+      <input onclick = "color2()" type="submit">
+    </div>
+    <div>
+      <select id="Select1" onchange="select1()">
+        <option class="op">solid</option>
+        <option class="op">dotted</option>
+        <option class="op">double</option>
+
+    </select>
+
+    </div>
+    <div>
+      Border width
+      <select id="Select2" onchange="select2()">
+        <option class="op">10</option>
+        <option class="op">20</option>
+        <option class="op">30</option>
+      </select>
+
+    </div>
+    <div>
+      Vote more than:
+      <select id="Select3" onchange="select3()">
+        <option class="op">6</option>
+        <option class="op">7</option>
+        <option class="op">8</option>
+      </select>
+
+    </div>
+    </header>
+    
+    <main id="main">
+
+<template id="myTemplate">
+<div class="card">
+  <h1></h1>
+  <img src="" alt=""/>
+</div>
+</template>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
